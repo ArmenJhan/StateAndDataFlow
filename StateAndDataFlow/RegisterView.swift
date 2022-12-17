@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct RegisterView: View {
-    @State private var storageManager = StorageManager()
     @State private var name = ""
     @EnvironmentObject private var userManager: UserManager
     
@@ -35,8 +34,8 @@ struct RegisterView: View {
     
     private func registerUser() {
         if !name.isEmpty {
-            storageManager.name = name
-            userManager.name = storageManager.name
+            userManager.name = name
+            userManager.isRegister.toggle()
         }
     }
 }

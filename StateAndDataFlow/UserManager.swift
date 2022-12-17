@@ -8,7 +8,7 @@
 import Foundation
 
 class UserManager: ObservableObject {
-
-    @Published var name = StorageManager().name
+    @Published var isRegister = false
+    var name = ""
     
 }

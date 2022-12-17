@@ -8,5 +8,5 @@
 import SwiftUI
 
 class StorageManager: ObservableObject {
-    @State @AppStorage("name") var name = ""
+    
 }

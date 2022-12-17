@@ -63,8 +63,8 @@
 			children = (
 				A80D393A294A077F00BE3266 /* StateAndDataFlowApp.swift */,
 				A80D394E294A530900BE3266 /* StarterView.swift */,
-				A80D393C294A077F00BE3266 /* ContentView.swift */,
 				A80D394A294A4F3400BE3266 /* RegisterView.swift */,
+				A80D393C294A077F00BE3266 /* ContentView.swift */,
 				A80D3948294A47C100BE3266 /* TimeCounter.swift */,
 				A80D394C294A501D00BE3266 /* UserManager.swift */,
 				C0611A3C294CCA90003D47D4 /* StorageManager.swift */,
