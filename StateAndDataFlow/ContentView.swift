@@ -45,7 +45,6 @@ struct ContentView: View {
     
     private func logOut() {
         userManager.name = ""
-        userManager.isRegister.toggle()
     }
 }
 

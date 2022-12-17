@@ -20,7 +20,7 @@ struct RegisterView: View {
         
                 Text("\(name.count)")
                     .frame(width: 35)
-                    .foregroundColor(name.count <= 3 ? .red : .green)
+                    .foregroundColor(name.count < 3 ? .red : .green)
             }
             Button(action: registerUser) {
                 HStack {
@@ -28,14 +28,13 @@ struct RegisterView: View {
                     Text("OK")
                 }
             }
-            .disabled(name.count <= 3 ? true : false)
+            .disabled(name.count < 3 ? true : false)
         }
     }
     
     private func registerUser() {
         if !name.isEmpty {
             userManager.name = name
-            userManager.isRegister.toggle()
         }
     }
 }
